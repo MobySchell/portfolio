@@ -14,7 +14,16 @@ export default function App() {
         </div>
 
         <div className="w-full h-full flex items-center justify-center">
-          <div className="w-72 h-72 p-6 text-white bg-white rounded-lg shadow bg-opacity-20 backdrop-blur-lg drop-shadow-lg"></div>
+          <div className="w-[100vh] h-[85vh] p-6 text-white bg-white rounded-lg shadow bg-opacity-20 backdrop-blur-lg drop-shadow-lg">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="w-[100%] h-[100%]">
+                <img src="../src/assets/ME.png" alt="me" className="h-fit" />
+              </div>
+              <div>
+                <h1 className="uppercase">welcome joshua schell here</h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="bg-gray-400 h-screen">
