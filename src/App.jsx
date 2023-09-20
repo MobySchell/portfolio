@@ -14,7 +14,7 @@ export default function App() {
   return (
     <>
       <Navigation items={navbarItems} />
-      <div className="bg-[url('../src/assets/whalebackground.jpg')] bg-fixed bg-repeat-x h-screen">
+      <div className="bg-[url('../src/assets/whalebackground.jpg')] bg-fixed bg-center bg-repeat-x h-screen">
         <HeroSection />
         <AboutSection />
       </div>
