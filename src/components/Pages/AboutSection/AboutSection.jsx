@@ -5,9 +5,11 @@ export default function AboutSection() {
         <div className="grid grid-cols-2 w-[80%] h-[75%]">
           <div className="bg-white rounded-l-lg">Headshot</div>
           <div className="bg-slate-600 rounded-r-lg">
-            <div>Key Skills</div>
-            <div>Expertise</div>
-            <div>Achievements</div>
+            <div>Summary Of Myself</div>
+            <div className="">
+              <div>Key Skills</div>
+              <div>Achievements</div>
+            </div>
           </div>
         </div>
       </div>
