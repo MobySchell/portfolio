@@ -1,7 +1,8 @@
 import "./App.css";
 import Navigation from "./components/Navigation";
-import HeroSection from "./components/Pages/HeroSection/HeroSection";
-import AboutSection from "./components/Pages/AboutSection/AboutSection";
+import HeroSection from "./components/Pages/HeroSection";
+import AboutSection from "./components/Pages/AboutSection";
+import ContactSection from "./components/Pages/ContactSection";
 
 export default function App() {
   const navbarItems = [
@@ -14,9 +15,12 @@ export default function App() {
   return (
     <>
       <Navigation items={navbarItems} />
-      <div className="bg-[url('../src/assets/whalebackground.jpg')] bg-fixed bg-center bg-repeat-x h-screen">
+      <div className="bg-[url('../src/assets/whalebackground.jpg')] bg-center h-screen">
         <HeroSection />
-        <AboutSection />
+      </div>
+      <AboutSection />
+      <div className="bg-[url('../src/assets/topLeftOcean.jpg')] bg-no-repeat bg-cover h-screen">
+        <ContactSection />
       </div>
     </>
   );
