@@ -8,7 +8,7 @@ export default function App() {
   const navbarItems = [
     { text: "Home", link: "/" },
     { text: "About", link: "/about" },
-    { text: "Services", link: "/services" },
+    { text: "Projects", link: "/services" },
     { text: "Contact", link: "/contact" },
   ];
 
