@@ -1,7 +1,7 @@
 export default function AboutSection() {
   return (
     <>
-      <div className="w-full h-screen flex justify-center items-center bg-[#456E84]">
+      <div className="w-full h-screen flex justify-center items-center bg-gradient-to-r from-[#264A61] from-10% via-[#07162B] via-30% to-[#78949E] to-90%">
         <div className="grid grid-cols-2 w-[80%] h-[75%]">
           <div className="bg-white rounded-l-lg flex justify-center items-center">
             <div className="bg-slate-300 w-[80%] h-[80%] rounded-lg">
