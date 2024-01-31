@@ -2,11 +2,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      backgroundImage: {
-        "whale-image": "url(/assets/whalebackground.jpg)",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
