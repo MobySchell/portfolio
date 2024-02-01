@@ -6,9 +6,8 @@ function App() {
   return (
     <>
       <Navigation />
-      <div className="w-[100%] h-screen bg-primary">
-        <LandingPage />
-      </div>
+
+      <LandingPage />
     </>
   );
 }
