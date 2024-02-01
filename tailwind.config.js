@@ -6,6 +6,7 @@ export default {
       primary: "#22092C",
       secondary: "#872341",
       action: "#BE3144",
+      white: "#FFFFFF",
     },
     extend: {},
   },
