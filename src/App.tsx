@@ -1,14 +1,15 @@
 import "./App.css";
 import Navigation from "./components/Navigation";
 import LandingPage from "./components/pages/LandingPage";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Navigation />
-      <div className="w-[100%] h-screen bg-primary">
-        <LandingPage />
-      </div>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
     </>
   );
 }
