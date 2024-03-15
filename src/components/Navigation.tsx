@@ -1,12 +1,13 @@
-export default function Navigation() {
+import { Link } from "react-router-dom";
+
+const Navigation: React.FC = () => {
   return (
     <>
       <div className="absolute top-0 right-0 mt-5 mr-5">
         <div className="grid grid-rows-4 gap-y-10">
           {/* Home */}
           <div className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-            <div>Home</div>
-
+            <Link to="/">Home</Link>
             <svg
               className="place-self-end"
               fill="none"
@@ -27,7 +28,7 @@ export default function Navigation() {
 
           {/* About me */}
           <div className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-            <div>About Me</div>
+            <Link to="/about">About Me</Link>
             <svg
               className="place-self-end"
               fill="none"
@@ -54,7 +55,7 @@ export default function Navigation() {
 
           {/* Projects */}
           <div className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-            <div>Projects</div>
+            <Link to="/projects">Projects</Link>
             <svg
               className="place-self-end"
               fill="none"
@@ -87,7 +88,7 @@ export default function Navigation() {
 
           {/* Contact Me */}
           <div className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-            <div>Contact</div>
+            <Link to="/contact">Contact</Link>
             <svg
               className="place-self-end"
               fill="none"
@@ -115,4 +116,6 @@ export default function Navigation() {
       </div>
     </>
   );
-}
+};
+
+export default Navigation;
