@@ -17,7 +17,7 @@ export default {
         "text-slide-4":
           "text-slide-4 10s cubic-bezier(0.83, 0, 0.17, 1) infinite",
         "text-slide-5":
-          "text-slide-5 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite",
+          "text-slide-5 10.5s cubic-bezier(0.83, 0, 0.17, 1) infinite",
         "text-slide-6":
           "text-slide-6 15s cubic-bezier(0.83, 0, 0.17, 1) infinite",
         "text-slide-7":
