@@ -4,15 +4,13 @@ export default function AboutMe() {
   return (
     <>
       <div className="grid w-[100%] h-fit bg-primary">
-        <div className="grid place-self-center w-[80%] h-fit text-white">
+        <div className="grid place-self-center w-[90%] md:w-[80%] h-fit text-white">
           {/* Info about me section */}
           <div className="grid grid-rows-auto my-[82px]">
-            {/* 3 Rows */}
             <div>
-              {/* 2 Columns */}
-              <div className="grid grid-cols-2 gap-5 bg-action rounded-lg p-5 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 bg-action rounded-lg p-5 ">
                 <img
-                  className="max-w-[90%] grid place-self-center rounded-lg"
+                  className="grid place-self-center rounded-lg"
                   src={me}
                   alt="me"
                 />
@@ -60,50 +58,61 @@ export default function AboutMe() {
               </div>
             </div>
             {/* 2 Columns */}
-            <div className="grid grid-cols-2 gap-5 mt-5 h-fit">
-              <div className="bg-action rounded-lg p-5 h-fit">
-                <div>Tech Skills</div>
-                <ul>
-                  <li>React.js</li>
-                  <li>JavaScript</li>
-                  <li>Firebase</li>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Pending Skills</li>
-                  <li>MongoDB</li>
-                  <li>Express.js</li>
-                  <li>Next.js</li>
-                  <li>Node.js</li>
-                </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 h-fit">
+              <div className="grid grid-cols-auto bg-action rounded-lg p-5 h-fit ">
+                <div className="col-start-1">
+                  <div className="font-semibold">Tech Skills</div>
+                  <ul>
+                    <li> - React.js</li>
+                    <li> - JavaScript</li>
+                    <li> - Firebase</li>
+                    <li> - HTML5</li>
+                    <li> - CSS3</li>
+                  </ul>
+                </div>
+
+                <div className="col-start-2">
+                  <div className="font-semibold">Pending Tech Skills</div>
+                  <ul>
+                    <li> - TypeScript</li>
+                    <li> - Next.js</li>
+                    <li> - Node.js</li>
+                    <li> - MongoDB</li>
+                    <li> - Express.js</li>
+                  </ul>
+                </div>
               </div>
+
               <div className="bg-action rounded-lg p-5 h-fit">
-                <div>Soft Skills</div>
+                <div className="font-semibold">Soft Skills</div>
                 <ul>
-                  <li>Communication</li>
-                  <li>Adaptability</li>
-                  <li>Leadership</li>
-                  <li>Problem-solving</li>
-                  <li>Teamwork</li>
-                  <li>Positive attitude</li>
+                  <li> - Communication</li>
+                  <li> - Adaptability</li>
+                  <li> - Leadership</li>
+                  <li> - Problem-solving</li>
+                  <li> - Teamwork</li>
+                  <li> - Positive attitude</li>
                 </ul>
               </div>
             </div>
             {/* 2 Columns */}
-            <div className="grid grid-cols-2 gap-5 mt-5 h-fit">
+            <div className="grid auto-cols-auto gap-5 mt-5 h-fit">
               <div className="bg-action rounded-lg p-5 h-fit">
-                <div>What I am learning</div>
+                <div className="font-semibold">
+                  What I am currently learning
+                </div>
                 <ul>
-                  <li>Data Scructures & Algorithms</li>
-                  <li>Web Development - MERN Stack</li>
+                  <li> - Data Scructures & Algorithms</li>
+                  <li> - Web Development - MERN Stack</li>
                 </ul>
               </div>
               <div className="bg-action rounded-lg p-5 h-fit">
-                <div>What I like</div>
+                <div className="font-semibold">What I like</div>
                 <ul>
-                  <li>Exploring</li>
-                  <li>Games - both digital and physical</li>
-                  <li>Festivals</li>
-                  <li>Night Markets</li>
+                  <li> - Exploring</li>
+                  <li> - Games - both digital and physical</li>
+                  <li> - Festivals</li>
+                  <li> - Night Markets</li>
                 </ul>
               </div>
             </div>
