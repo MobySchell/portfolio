@@ -15,7 +15,7 @@ export default function AboutMe() {
                   alt="me"
                 />
                 <div>
-                  <div className="text-xl">Get To Know Me</div>
+                  <div className="text-xl font-semibold">Get To Know Me</div>
                   <div className="grid gap-5">
                     <p>
                       Hey there! 👋 Just a young tech adventurer here,
@@ -59,7 +59,7 @@ export default function AboutMe() {
             </div>
             {/* 2 Columns */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 h-fit">
-              <div className="grid grid-cols-auto bg-action rounded-lg p-5 h-fit ">
+              <div className="grid grid-cols-auto bg-action rounded-lg p-5 h-full ">
                 <div className="col-start-1">
                   <div className="font-semibold">Tech Skills</div>
                   <ul>
