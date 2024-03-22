@@ -5,10 +5,12 @@ import AboutMe from "./components/pages/AboutMe";
 import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Navigation />
       <Routes>
         <Route path="/" element={<LandingPage />} />
