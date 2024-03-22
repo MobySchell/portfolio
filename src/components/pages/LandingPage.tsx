@@ -2,7 +2,7 @@ function LandingPage() {
   return (
     <>
       <div className="grid w-[100%] h-screen bg-primary">
-        <div className="place-self-center w-[80%] h-[80%] bg-action">
+        <div className="place-self-center w-[90%] md:w-fit h-fit bg-action rounded-lg px-10 py-5">
           <div className="grid place-content-center w-[100%] h-[100%] gap-5">
             <div className="font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">
               Hi I'm Joshua{" "}

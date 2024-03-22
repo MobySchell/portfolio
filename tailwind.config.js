@@ -2,12 +2,19 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
     colors: {
       primary: "#22092C",
       secondary: "#872341",
       action: "#BE3144",
       white: "#FFFFFF",
     },
+
     extend: {
       animation: {
         "text-slide-2":
