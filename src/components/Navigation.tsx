@@ -24,7 +24,7 @@ const Navigation: React.FC = () => {
   return (
     <>
       {isMobile ? (
-        <div className="absolute top-0 right-0 mt-5 mr-5 grid grid-rows-fr gap-2 bg-primary bg-opacity-80 pl-2 rounded-xl">
+        <div className="absolute top-0 right-0 mt-5 mr-5 grid grid-rows-fr gap-2 bg-primary bg-opacity-80 pl-2 rounded-xl z-50">
           <div
             className="flex justify-around flex-col flex-nowrap z-10 w-[2rem] h-[2rem] place-self-end"
             onClick={toggleHamburger}
