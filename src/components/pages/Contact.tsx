@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Contact: React.FC = () => {
   return (
     <>
@@ -19,9 +21,8 @@ const Contact: React.FC = () => {
                   className="bg-white rounded-lg drop-shadow-lg h-12 px-2"
                   placeholder="Email"
                 />
-                <input
-                  type="text"
-                  className="bg-white rounded-lg drop-shadow-lg h-36 px-2"
+                <textarea
+                  className="bg-white rounded-lg drop-shadow-lg h-36 px-2 pt-3 align-top"
                   placeholder="Greetings"
                 />
                 <input
@@ -34,7 +35,10 @@ const Contact: React.FC = () => {
             {/* Socials and some info */}
             <div className="grid grid-cols-2">
               {/* LinkedIn */}
-              <div>
+              <Link
+                to="https://www.linkedin.com/in/joshua-schell-0b2226182/"
+                target="_blank"
+              >
                 <svg
                   height="50px"
                   version="1.1"
@@ -51,9 +55,9 @@ const Contact: React.FC = () => {
                   38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z"
                   />
                 </svg>
-              </div>
+              </Link>
               {/* Github */}
-              <div>
+              <Link to="https://github.com/MobySchell" target="_blank">
                 <svg
                   enable-background="new 0 0 32 32"
                   height="50px"
@@ -80,7 +84,7 @@ const Contact: React.FC = () => {
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

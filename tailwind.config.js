@@ -13,6 +13,7 @@ export default {
       secondary: "#872341",
       action: "#BE3144",
       white: "#FFFFFF",
+      black: "#000000",
     },
 
     extend: {
@@ -31,8 +32,16 @@ export default {
           "text-slide-7 17.5s cubic-bezier(0.83, 0, 0.17, 1) infinite",
         "text-slide-8":
           "text-slide-8 20s cubic-bezier(0.83, 0, 0.17, 1) infinite",
+        "my-pingg": "pingg 2.5s cubic-bezier(0, 0, 0.2, 1) infinite",
       },
       keyframes: {
+        //prettier-ignore
+        "pingg": {
+          "75%, 100%": {
+            transform: "scale(2)",
+            opacity: 0,
+          },
+        },
         "text-slide-2": {
           "0%, 40%": {
             transform: "translateY(0%)",

@@ -15,14 +15,14 @@ export default function AboutMe() {
                   alt="me"
                 />
                 <div>
-                  <div className="text-xl font-semibold">Get To Know Me</div>
+                  <div className="text-xl font-semibold">Hey there! 👋</div>
                   <div className="grid gap-5">
                     <p>
-                      Hey there! 👋 Just a young tech adventurer here,
-                      navigating the wilds of technology - simultaneously
-                      fretting over AI while also gleefully embracing its
-                      wonders! 😄 Sure, I might not have the mileage yet, but
-                      hey, I'm all about putting in the elbow grease!
+                      Just a young tech adventurer here, navigating the wilds of
+                      technology - simultaneously fretting over AI while also
+                      gleefully embracing its wonders! 😄 Sure, I might not have
+                      the mileage yet, but hey, I'm all about putting in the
+                      elbow grease!
                     </p>
                     <p>
                       My journey kicked off at Younglings where I dipped my toes
