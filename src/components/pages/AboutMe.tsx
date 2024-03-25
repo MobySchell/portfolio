@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <>
       <div className="grid w-[100%] h-fit bg-primary">
-        <div className="grid place-self-center w-[90%] md:w-[80%] h-fit text-white">
+        <div className="grid place-self-center w-[90%] md:w-[80%] h-fit text-black">
           {/* Info about me section */}
           <div className="grid grid-rows-auto my-[82px]">
             <div>

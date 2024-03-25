@@ -4,7 +4,7 @@ export default function Projects() {
       <div className="grid w-[100%] h-screen bg-primary">
         <div className="w-[90%] md:w-[80%] h-[80%] place-self-center bg-action rounded-lg p-5 mt-[32px]">
           <div className="grid place-content-center w-[100%] h-[100%]">
-            <div className=" text-white">
+            <div className=" text-black">
               Currently Still Building Projects To Showcase 👷
             </div>
           </div>
