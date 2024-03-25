@@ -4,11 +4,11 @@ function LandingPage() {
   return (
     <>
       <div className="grid w-[100%] h-screen bg-primary">
-        <div className="place-self-center w-[90%] md:w-fit h-fit bg-action rounded-lg px-10 py-5">
-          <div className="grid place-content-center w-[100%] h-[100%] gap-5">
-            <div className="text-black font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">
+        <div className="place-self-center w-[90%] lg:w-fit h-fit bg-secondary rounded-lg px-10 py-5">
+          <div className="grid place-content-center w-[100%] h-[100%] gap-8">
+            <div className="text-white font-extrabold text-3xl lg:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">
               Hi I'm Joshua{" "}
-              <span className="text-secondary inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+              <span className="text-black inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] lg:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
                 <ul className="block animate-text-slide-5 text-left leading-tight [&_li]:block">
                   <li>a Web Developer</li>
                   <li>a Leader</li>
@@ -20,8 +20,8 @@ function LandingPage() {
               </span>
             </div>
           </div>
-          <div className="grid grid-cols-2 w-[100%] ">
-            <div className="grid text-black content-center font-semibold">
+          <div className="grid grid-cols-2 w-[100%] mt-2">
+            <div className="grid text-white content-center font-semibold">
               Get to know me
             </div>
             <div className="place-self-end ">
