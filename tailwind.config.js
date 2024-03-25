@@ -11,7 +11,7 @@ export default {
     colors: {
       primary: "#22092C",
       secondary: "#872341",
-      action: "#BE3144",
+      action: "#B8F02E",
       white: "#FFFFFF",
       black: "#000000",
     },
@@ -32,7 +32,7 @@ export default {
           "text-slide-7 17.5s cubic-bezier(0.83, 0, 0.17, 1) infinite",
         "text-slide-8":
           "text-slide-8 20s cubic-bezier(0.83, 0, 0.17, 1) infinite",
-        "my-pingg": "pingg 2.5s cubic-bezier(0, 0, 0.2, 1) infinite",
+        "my-pingg": "pingg 2.05s cubic-bezier(0, 0, 0.2, 1) infinite",
       },
       keyframes: {
         //prettier-ignore
