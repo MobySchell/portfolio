@@ -9,10 +9,10 @@ export default {
       xl: "1440px",
     },
     colors: {
-      primary: "#030637",
-      secondary: "#3C0753",
+      primary: "#0d0c0d",
+      secondary: "#1a1a1a",
       tertiary: "#720455",
-      action: "#910A67",
+      action: "#262626",
       white: "#FFFFFF",
       black: "#000000",
     },
