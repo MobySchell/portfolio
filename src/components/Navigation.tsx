@@ -15,7 +15,7 @@ const Navigation: React.FC = () => {
     };
   }, []);
 
-  const isMobile = width <= 768;
+  const isMobile = width <= 968;
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
@@ -24,7 +24,7 @@ const Navigation: React.FC = () => {
   return (
     <>
       {isMobile ? (
-        <div className="absolute top-0 right-0 mt-5 mr-5 grid grid-rows-fr gap-2 bg-primary bg-opacity-80 pl-2 rounded-xl z-50">
+        <div className="absolute top-0 right-0 mt-5 mr-5 grid grid-rows-fr gap-2 bg-primary bg-opacity-80 z-50 rounded-xl">
           <div
             className="flex justify-around flex-col flex-nowrap z-10 w-[2rem] h-[2rem] place-self-end"
             onClick={toggleHamburger}
@@ -36,14 +36,13 @@ const Navigation: React.FC = () => {
 
           <div>
             {hamburgerOpen ? (
-              <div className="grid grid-rows-4 gap-y-10">
+              <div className="grid grid-rows-4 gap-y-10 px-4 pb-2">
                 {/* Home */}
                 <Link
                   to="/"
-                  className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                  className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-start transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
                   onClick={toggleHamburger}
                 >
-                  <div>Home</div>
                   <svg
                     className="place-self-end"
                     fill="none"
@@ -60,15 +59,15 @@ const Navigation: React.FC = () => {
                       stroke-linejoin="round"
                     />
                   </svg>
+                  <div>Home</div>
                 </Link>
 
                 {/* About me */}
                 <Link
                   to="/about"
-                  className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                  className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-start transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
                   onClick={toggleHamburger}
                 >
-                  <div>About Me</div>
                   <svg
                     className="place-self-end"
                     fill="none"
@@ -91,15 +90,15 @@ const Navigation: React.FC = () => {
                       stroke-linejoin="round"
                     />
                   </svg>
+                  <div>About Me</div>
                 </Link>
 
                 {/* Projects */}
                 <Link
                   to="/projects"
-                  className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                  className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-start transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
                   onClick={toggleHamburger}
                 >
-                  <div>Projects</div>
                   <svg
                     className="place-self-end"
                     fill="none"
@@ -128,15 +127,15 @@ const Navigation: React.FC = () => {
                       stroke-linejoin="round"
                     />
                   </svg>
+                  <div>Projects</div>
                 </Link>
 
                 {/* Contact Me */}
                 <Link
                   to="/contact"
-                  className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                  className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-start transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
                   onClick={toggleHamburger}
                 >
-                  <div>Contact</div>
                   <svg
                     className="place-self-end"
                     fill="none"
@@ -159,6 +158,7 @@ const Navigation: React.FC = () => {
                       stroke-linejoin="round"
                     />
                   </svg>
+                  <div>Contact</div>
                 </Link>
               </div>
             ) : (
@@ -168,14 +168,13 @@ const Navigation: React.FC = () => {
         </div>
       ) : (
         <div>
-          <div className="absolute top-0 right-0 mt-5 mr-5">
-            <div className="grid grid-rows-4 gap-y-10">
+          <div className="absolute top-0 right-0">
+            <div className="grid grid-flow-col-dense mt-5 mr-48 gap-5">
               {/* Home */}
               <Link
                 to="/"
-                className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                className="grid grid-flow-col auto-cols-max gap-x-3 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
               >
-                <div>Home</div>
                 <svg
                   className="place-self-end"
                   fill="none"
@@ -192,14 +191,14 @@ const Navigation: React.FC = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
+                <div>Home</div>
               </Link>
 
               {/* About me */}
               <Link
                 to="/about"
-                className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                className="grid grid-flow-col auto-cols-max gap-x-3 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
               >
-                <div>About Me</div>
                 <svg
                   className="place-self-end"
                   fill="none"
@@ -222,14 +221,14 @@ const Navigation: React.FC = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
+                <div>About Me</div>
               </Link>
 
               {/* Projects */}
               <Link
                 to="/projects"
-                className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                className="grid grid-flow-col auto-cols-max gap-x-3 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
               >
-                <div>Projects</div>
                 <svg
                   className="place-self-end"
                   fill="none"
@@ -258,14 +257,14 @@ const Navigation: React.FC = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
+                <div>Projects</div>
               </Link>
 
               {/* Contact Me */}
               <Link
                 to="/contact"
-                className="grid grid-flow-col auto-cols-max gap-x-5 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                className="grid grid-flow-col auto-cols-max gap-x-3 text-white place-self-end transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
               >
-                <div>Contact</div>
                 <svg
                   className="place-self-end"
                   fill="none"
@@ -288,6 +287,7 @@ const Navigation: React.FC = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
+                <div>Contact</div>
               </Link>
             </div>
           </div>
