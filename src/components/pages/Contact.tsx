@@ -5,9 +5,9 @@ const Contact: React.FC = () => {
     <>
       <div className="grid w-[100%] h-screen bg-primary">
         <div className="grid mt-[32px] place-self-center w-[90%] md:w-[80%] h-[80%] bg-action rounded-lg p-5">
-          <div className="w-[100%] h-[100%] ">
+          <div className="w-[100%] h-[100%] lg:grid lg:grid-cols-2">
             <div className="mb-10">
-              <div className="text-white text-xl font-semibold">
+              <div className="text-black text-xl font-semibold">
                 Get In Touch
               </div>
               <div className="grid gap-5 mt-4">
