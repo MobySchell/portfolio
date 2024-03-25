@@ -19,14 +19,14 @@ const ScrollToTop = () => {
   };
   return (
     <>
-      <div className="fixed bottom-0 right-0 mr-2 mb-2">
+      <div className="fixed bottom-0 right-0 mr-4 lg:mr-20 mb-4 lg:mb-20">
         {showTopBtn ? (
           <div className="" onClick={goToTop}>
             <svg
-              className="bg-white rounded-full"
+              className="bg-action rounded-full border-4"
               fill="none"
               height="64"
-              stroke="currentColor"
+              stroke="white"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"

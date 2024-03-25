@@ -4,18 +4,20 @@ export default function AboutMe() {
   return (
     <>
       <div className="grid w-[100%] h-fit bg-primary">
-        <div className="grid place-self-center w-[90%] md:w-[80%] h-fit text-black">
+        <div className="grid place-self-center w-[90%] md:w-[80%] h-fit text-white">
           {/* Info about me section */}
           <div className="grid grid-rows-auto my-[82px]">
             <div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 bg-action rounded-lg p-5 ">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 bg-secondary rounded-lg p-5 ">
                 <img
                   className="grid place-self-center rounded-lg"
                   src={me}
                   alt="me"
                 />
                 <div>
-                  <div className="text-xl font-semibold">Hey there! 👋</div>
+                  <div className="text-xl font-semibold my-4">
+                    Hey there! 👋
+                  </div>
                   <div className="grid gap-5">
                     <p>
                       Just a young tech adventurer here, navigating the wilds of
@@ -58,61 +60,51 @@ export default function AboutMe() {
               </div>
             </div>
             {/* 2 Columns */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 h-fit">
-              <div className="grid grid-cols-auto bg-action rounded-lg p-5 h-full ">
-                <div className="col-start-1">
+            <div className="grid mt-5 h-fit">
+              <div className="grid grid-cols-1 lg:grid-cols-2 h-full gap-5">
+                <div className="bg-action rounded-lg p-5">
                   <div className="font-semibold">Tech Skills</div>
-                  <ul>
-                    <li> - React.js</li>
-                    <li> - JavaScript</li>
-                    <li> - Firebase</li>
-                    <li> - HTML5</li>
-                    <li> - CSS3</li>
+                  <ul className="pl-10">
+                    <li className="list-disc">React.js</li>
+                    <li className="list-disc">JavaScript</li>
+                    <li className="list-disc">Firebase</li>
+                    <li className="list-disc">HTML5</li>
+                    <li className="list-disc">CSS3</li>
                   </ul>
                 </div>
 
-                <div className="col-start-2">
-                  <div className="font-semibold">Pending Tech Skills</div>
-                  <ul>
-                    <li> - TypeScript</li>
-                    <li> - Next.js</li>
-                    <li> - Node.js</li>
-                    <li> - MongoDB</li>
-                    <li> - Express.js</li>
+                <div className="bg-action rounded-lg p-5">
+                  <div className="font-semibold">Tech I'm Learning</div>
+                  <ul className="pl-10">
+                    <li className="list-disc">TypeScript</li>
+                    <li className="list-disc">Next.js</li>
+                    <li className="list-disc">Node.js</li>
+                    <li className="list-disc">MongoDB</li>
+                    <li className="list-disc">Express.js</li>
                   </ul>
                 </div>
-              </div>
-
-              <div className="bg-action rounded-lg p-5 h-fit">
-                <div className="font-semibold">Soft Skills</div>
-                <ul>
-                  <li> - Communication</li>
-                  <li> - Adaptability</li>
-                  <li> - Leadership</li>
-                  <li> - Problem-solving</li>
-                  <li> - Teamwork</li>
-                  <li> - Positive attitude</li>
-                </ul>
               </div>
             </div>
             {/* 2 Columns */}
-            <div className="grid auto-cols-auto gap-5 mt-5 h-fit">
-              <div className="bg-action rounded-lg p-5 h-fit">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5 h-fit">
+              <div className="bg-action rounded-lg p-5 h-full">
                 <div className="font-semibold">
                   What I am currently learning
                 </div>
-                <ul>
-                  <li> - Data Scructures & Algorithms</li>
-                  <li> - Web Development - MERN Stack</li>
+                <ul className="pl-10">
+                  <li className="list-disc">Data Scructures & Algorithms</li>
+                  <li className="list-disc">Web DevelopmentMERN Stack</li>
                 </ul>
               </div>
-              <div className="bg-action rounded-lg p-5 h-fit">
+              <div className="bg-action rounded-lg p-5 h-full">
                 <div className="font-semibold">What I like</div>
-                <ul>
-                  <li> - Exploring</li>
-                  <li> - Games - both digital and physical</li>
-                  <li> - Festivals</li>
-                  <li> - Night Markets</li>
+                <ul className="pl-10">
+                  <li className="list-disc">Exploring</li>
+                  <li className="list-disc">
+                    Games - both digital and physical
+                  </li>
+                  <li className="list-disc">Festivals</li>
+                  <li className="list-disc">Night Markets</li>
                 </ul>
               </div>
             </div>
