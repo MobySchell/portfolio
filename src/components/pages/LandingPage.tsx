@@ -8,7 +8,7 @@ function LandingPage() {
           <div className="grid place-content-center w-[100%] h-[100%] gap-8">
             <div className="text-white font-extrabold text-3xl lg:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">
               Hi I'm Joshua{" "}
-              <span className="text-black inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] lg:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+              <span className="text-white inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] lg:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
                 <ul className="block animate-text-slide-5 text-left leading-tight [&_li]:block">
                   <li>a Web Developer</li>
                   <li>a Leader</li>
