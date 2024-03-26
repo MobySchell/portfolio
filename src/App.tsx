@@ -4,7 +4,7 @@ import LandingPage from "./components/pages/LandingPage";
 import AboutMe from "./components/pages/AboutMe";
 import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -17,6 +17,9 @@ function App() {
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* Default redirect */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );
