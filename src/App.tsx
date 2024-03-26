@@ -14,9 +14,9 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="about" element={<AboutMe />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="contact" element={<Contact />} />
 
         {/* Default redirect */}
         <Route path="*" element={<Navigate to="/" />} />
