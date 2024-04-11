@@ -1,8 +1,14 @@
 import me from "../assets/IMG-20230129-WA0025.jpg";
+import { motion } from "framer-motion";
 
 export default function AboutMe() {
   return (
-    <>
+    <motion.div
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: "easeInOut" }}
+    >
       <div className="grid w-[100%] h-fit bg-primary">
         <div className="grid place-self-center w-[90%] md:w-[80%] h-fit text-white">
           {/* Info about me section */}
@@ -113,6 +119,6 @@ export default function AboutMe() {
           <div></div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }

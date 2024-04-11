@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function LandingPage() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: "easeInOut" }}
+    >
       <div className="grid w-[100%] h-screen bg-primary">
-        <div className="place-self-center w-[90%] lg:w-fit h-fit bg-secondary rounded-lg px-10 py-5">
+        <div className="place-self-center w-[90%] md:w-fit lg:md:w-fit h-fit bg-secondary rounded-lg px-5 py-5">
           <div className="grid place-content-center w-[100%] h-[100%] gap-8">
             <div className="text-white font-extrabold text-3xl lg:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">
               Hi I'm Joshua{" "}
@@ -61,7 +66,7 @@ function LandingPage() {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
 

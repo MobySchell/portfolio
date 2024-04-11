@@ -168,7 +168,7 @@ const Navigation: React.FC = () => {
         </div>
       ) : (
         <div>
-          <div className="absolute top-0 right-0">
+          <div className="absolute top-0 right-0 z-50">
             <div className="grid grid-flow-col-dense mt-5 mr-48 gap-5">
               {/* Home */}
               <Link
