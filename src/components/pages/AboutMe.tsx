@@ -1,7 +1,16 @@
+import { useEffect } from "react";
 import me from "../assets/IMG-20230129-WA0025.jpg";
 import { motion } from "framer-motion";
 
 export default function AboutMe() {
+  // useEffect(() => {
+  //   const saveLastVisitedPage = () => {
+  //     localStorage.setItem("lastVisitedPage", "/about");
+  //   };
+
+  //   saveLastVisitedPage();
+  // }, []);
+
   return (
     <motion.div
       initial={{ x: "100%" }}

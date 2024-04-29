@@ -1,6 +1,16 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Projects() {
+  // useEffect(() => {
+  //   // Save current page to local storage
+  //   const saveLastVisitedPage = () => {
+  //     localStorage.setItem("lastVisitedPage", "/projects");
+  //   };
+
+  //   saveLastVisitedPage();
+  // }, []);
+
   return (
     <motion.div
       initial={{ x: "100%" }}

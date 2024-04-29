@@ -1,4 +1,4 @@
-import { useState, createRef } from "react";
+import { useState, createRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -9,6 +9,14 @@ const Contact: React.FC = () => {
   const form = createRef<HTMLFormElement>();
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
+
+  // useEffect(() => {
+  //   const saveLastVisitedPage = () => {
+  //     localStorage.setItem("lastVisitedPage", "/contact");
+  //   };
+
+  //   saveLastVisitedPage();
+  // }, []);
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
