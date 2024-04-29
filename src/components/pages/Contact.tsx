@@ -1,7 +1,51 @@
+import { useState, createRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
+  const form = createRef<HTMLFormElement>();
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+    // Clear the error message when the user starts typing again
+    setEmailError("");
+  };
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email.match(emailRegex)) {
+      setEmailError("Please enter a valid email address.");
+      return;
+    }
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_6b283fr",
+          "template_gawwdxn",
+          form.current,
+          "_5PhJ-E9y6K-_-4Rx"
+        )
+        .then(
+          () => {
+            toast("Thank you for contacting me, I'll get back to you!");
+          },
+          (error: Error) => {
+            toast("An error occurred, Please try again " + error);
+          }
+        );
+      form.current.reset();
+      setEmail(" ");
+    } else {
+      console.error("Form reference is undefined");
+    }
+  };
+
   return (
     <motion.div
       initial={{ x: "100%" }}
@@ -17,27 +61,40 @@ const Contact: React.FC = () => {
                 <div className="text-white text-xl font-semibold">
                   Get In Touch
                 </div>
-                <div className="grid gap-5 mt-4">
+                <form
+                  ref={form}
+                  onSubmit={sendEmail}
+                  className="grid gap-5 mt-4 text-black"
+                >
                   <input
+                    required
                     type="text"
+                    name="fullName"
                     className="bg-white rounded-lg drop-shadow-lg h-12 px-2"
                     placeholder="Name"
                   />
                   <input
+                    required
                     type="email"
+                    name="email"
+                    value={email}
+                    onChange={handleEmailChange}
                     className="bg-white rounded-lg drop-shadow-lg h-12 px-2"
                     placeholder="Email"
                   />
+                  {emailError && <div>{emailError}</div>}
                   <textarea
+                    required
+                    name="message"
                     className="bg-white rounded-lg drop-shadow-lg h-36 px-2 pt-3 align-top"
                     placeholder="Greetings"
                   />
                   <input
                     type="submit"
                     value="Send Away"
-                    className="bg-action rounded-md drop-shadow-lg px-5 py-2 w-[40%] place-self-center transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                    className="bg-action text-white rounded-md drop-shadow-lg px-5 py-2 w-[40%] place-self-center transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
                   />
-                </div>
+                </form>
               </div>
             </div>
             {/* Socials and some info */}
@@ -117,6 +174,20 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <ToastContainer
+            position="bottom-right"
+            autoClose={3500}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
         </div>
       </div>
     </motion.div>
