@@ -10,6 +10,14 @@ const Contact: React.FC = () => {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
 
+  // useEffect(() => {
+  //   const saveLastVisitedPage = () => {
+  //     localStorage.setItem("lastVisitedPage", "/contact");
+  //   };
+
+  //   saveLastVisitedPage();
+  // }, []);
+
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
     // Clear the error message when the user starts typing again
