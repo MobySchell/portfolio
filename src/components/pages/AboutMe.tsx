@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import me from "../assets/IMG-20230129-WA0025.jpg";
 import { motion } from "framer-motion";
 

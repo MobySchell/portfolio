@@ -1,4 +1,4 @@
-import { useState, createRef, useEffect } from "react";
+import { useState, createRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
