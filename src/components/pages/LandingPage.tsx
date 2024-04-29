@@ -2,14 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function LandingPage() {
-  // useEffect(() => {
-  //   const saveLastVisitedPage = () => {
-  //     localStorage.setItem("lastVisitedPage", "/");
-  //   };
-
-  //   saveLastVisitedPage();
-  // }, []);
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
