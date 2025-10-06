@@ -1,1 +1,4 @@
-{ "routes": [{ "src": "/[^.]+", "dist": "/", "status": 200 }] }
+{
+	"buildCommand": "next build",
+	"outputDirectory": ".next"
+}
