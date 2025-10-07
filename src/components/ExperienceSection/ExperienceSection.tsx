@@ -123,10 +123,10 @@ export default function ExperienceSection() {
 						<div className="grid grid-cols-1 gap-4">
 							<EducationCard
 								institution="Rosebank College"
-								qualification="Higher Ceritficate in App Development and Web Development"
+								qualification="Higher Certificate in App Development and Web Development"
 								location="Cape Town, South Africa"
 								dateRange="Feb 2025 – Feb 2026"
-								notes="Focused on software engineering fundamentals, web development and app devlopment."
+								notes="Focused on software engineering fundamentals, web development and app development."
 								coursework={[
 									"Intro to Programming Logic",
 									"Technical Writing and Communication",
