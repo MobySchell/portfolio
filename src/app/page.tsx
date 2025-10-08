@@ -5,6 +5,7 @@ import IntroSection from "@/components/IntroSection/IntroSection";
 import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection/ProjectsSection";
 import ContactSection from "@/components/ContactSection/ContactSection";
+import Spacing from "@/components/Spacing";
 
 export default function page() {
 	return (
@@ -19,11 +20,11 @@ export default function page() {
 
 				<ExperienceSection />
 
-				<SectionBreak />
+				<Spacing />
 
 				<ProjectsSection />
 
-				<SectionBreak />
+				<Spacing />
 
 				<ContactSection />
 			</div>

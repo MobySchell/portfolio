@@ -38,6 +38,20 @@ const projects: Project[] = [
 		link: "",
 		code: "https://github.com/MobySchell/ibm-fullstack-capstone",
 	},
+	{
+		name: "AxaiTech",
+		description: "Doctor Patient Portal",
+		technologies: [
+			"React",
+			"CSS",
+			"JavaScript",
+			"Firebase",
+			"Bootstrap",
+			"Nodemailer",
+		],
+		link: "",
+		code: "https://github.com/MobySchell/AxaiTech",
+	},
 	// {
 	// 	name: "API Explorer",
 	// 	description:
@@ -61,7 +75,7 @@ export default function ProjectsSection() {
 				{projects.map((p) => (
 					<article
 						key={p.name}
-						className="group relative rounded-xl border border-gray-200 dark:border-gray-700 bg-white/50 dark:bg-gray-900/40 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+						className="group relative rounded-xl border border-gray-200 dark:border-gray-700 bg-[#0a0a0a] backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow overflow-hidden"
 					>
 						<div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-tr from-transparent via-gray-100/60 dark:via-gray-800/40 to-transparent" />
 						<div className="p-5">
