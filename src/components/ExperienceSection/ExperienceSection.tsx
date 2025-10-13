@@ -1,7 +1,6 @@
 import React from "react";
 import JobExperienceCard from "./JobExperienceCard";
 import EducationCard from "./EducationCard";
-import SkillsSection from "../SkillsSection/SkillsSection";
 
 export default function ExperienceSection() {
 	return (
@@ -9,7 +8,7 @@ export default function ExperienceSection() {
 			<div className="w-full overflow-x-hidden min-w-0">
 				<div className="flex flex-col items-center justify-center py-2 mx-4 md:mx-16 lg:mx-32 my-12">
 					<pre
-						className="text-[3px] md:text-xs lg:text-xs text-center select-none overflow-x-auto w-full"
+						className="text-[2.5px] lg:text-[5px] text-center select-none w-full"
 						id="ExperiencePoint"
 					>
 						{String.raw`
@@ -112,15 +111,15 @@ export default function ExperienceSection() {
 						/>
 					</div>
 				</div>
-				{/* Education + Skills */}
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 w-full min-w-0">
+				{/* Education */}
+				<div className="grid grid-cols-1 gap-4 mt-8 w-full min-w-0">
 					<div className="w-full border border-dashed p-4 rounded-lg">
 						<div className="mb-4">
 							<h2 className="text-base font-semibold">
 								Education
 							</h2>
 						</div>
-						<div className="grid grid-cols-1 gap-4">
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:md:grid-cols-2 gap-4">
 							<EducationCard
 								institution="Rosebank College"
 								qualification="Higher Certificate in App Development and Web Development"
@@ -163,7 +162,6 @@ export default function ExperienceSection() {
 							/>
 						</div>
 					</div>
-					<SkillsSection />
 				</div>
 			</div>
 		</>
