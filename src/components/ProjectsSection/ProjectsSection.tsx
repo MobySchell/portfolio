@@ -111,7 +111,7 @@ export default function ProjectsSection() {
 										href={p.code}
 										target="_blank"
 										rel="noreferrer"
-										className="text-xs cursor-pointer text-gray-900 hover:text-white border border-dashed border-gray-800 hover:bg-gray-900 dark:border-gray-600 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700 rounded-lg px-3 py-1.5 transition-colors"
+										className="text-xs cursor-pointer text-gray-900 hover:text-white border border-dashed border-gray-800 bg-gray-600 hover:bg-gray-900 dark:border-gray-900 dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-900 rounded-lg px-3 py-1.5 transition-colors"
 									>
 										Code
 									</a>
