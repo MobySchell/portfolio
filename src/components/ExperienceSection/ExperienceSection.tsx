@@ -28,7 +28,7 @@ export default function ExperienceSection() {
 							company="Project Y"
 							title="Intern Fullstack Developer"
 							location="Cape Town, South Africa"
-							dateRange="Feb 2024 – Present"
+							dateRange="Feb 2025 - Nov 2025"
 							description="Built and upskilled in popular coding languages and used Agile methodologies to complete projects. Wrote clean, readable code and collaborated with team members to complete projects."
 							stack={[
 								"HTML",
@@ -124,7 +124,7 @@ export default function ExperienceSection() {
 								institution="Rosebank College"
 								qualification="Higher Certificate in App Development and Web Development"
 								location="Cape Town, South Africa"
-								dateRange="Feb 2025 – Feb 2026"
+								dateRange="Feb 2025 - Feb 2026"
 								notes="Focused on software engineering fundamentals, web development and app development."
 								coursework={[
 									"Intro to Programming Logic",
