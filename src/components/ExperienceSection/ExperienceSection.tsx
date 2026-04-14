@@ -25,6 +25,23 @@ export default function ExperienceSection() {
 					{/* Work */}
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 						<JobExperienceCard
+							company="Heidi Systems"
+							title="Junior Engineer"
+							location="Remote"
+							dateRange="Jan 2026 - Mar 2026"
+							description="Developed responsive dashboard interfaces and form components, triaged urgent tickets, and shipped bug fixes across a modern full-stack web environment."
+							stack={[
+								"Next.js",
+								"SvelteKit",
+								"Tailwindcss",
+								"DaisyUI",
+								"Supabase",
+								"Git",
+								"GitHub",
+								"PostgreSQL",
+							]}
+						/>
+						<JobExperienceCard
 							company="Project Y"
 							title="Intern Fullstack Developer"
 							location="Cape Town, South Africa"
